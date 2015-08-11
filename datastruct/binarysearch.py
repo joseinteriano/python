@@ -1,14 +1,4 @@
-def BinarySearch(l,key):
-    low=0
-    high=len(l)-1
-    i=0
-    while(low <= high):
-        i = i+1
-        mid = low + ((high-low)>>1)
-        if(l[mid] < key):
-            low = mid + 1
-        elif (l[mid] > key):
-            high = mid -1
+
         else:
             print "use %d times" % i
             return mid
